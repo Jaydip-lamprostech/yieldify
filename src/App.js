@@ -44,7 +44,7 @@ const App = () => {
     testnet: true,
   };
   const { chains, provider } = configureChains(
-    [goerli, scrollalpha],
+    [goerli],
     [
       alchemyProvider({ apiKey: "O5NYvtwLMNG0LjAXPQEk0YJT2l3UxTAY" }),
       publicProvider(),
