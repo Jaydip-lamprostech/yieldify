@@ -16,7 +16,8 @@ import compoundDao from "../../images/compoundDao.png";
 
 const AllSubscription = () => {
   // let arr = [1, 2, 3];
-  const CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
+  const SCROLL_CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
+  const CONTRACT_ADDRESS = "0x0e313A08547361F265d634B5A7b9179f432d0f52";
   const { address, isConnecting, isDisconnected } = useAccount();
   const [data, setData] = React.useState("");
   // let planCount = 0;
@@ -168,9 +169,7 @@ const AllSubscription = () => {
 
   if (data.length > 0) {
     return (
-      <div
-        className="subs-main"
-      >
+      <div className="subs-main">
         <div className="subs-header">All Subscription</div>
         <div className="subs-imgs-main">
           <div className="subs-imgs1">
@@ -178,7 +177,8 @@ const AllSubscription = () => {
               return (
                 <div className="subs-img-bgs" key={key}>
                   <div className="inside-subs-img-parent">
-                  <img className="subs-img" src={item.image}  alt="logo"/></div>
+                    <img className="subs-img" src={item.image} alt="logo" />
+                  </div>
                   <div className="subs-img-txt">{item.name}</div>
                   <div className="subs-img-txt">duration: {item.duration}</div>
                   <div className="subs-img-txt">Rate: {item.price}</div>
@@ -225,7 +225,11 @@ const AllSubscription = () => {
                   </div> */}
                     <div className="allsub-item">
                       <input type="checkbox" />
-                      <img className="allsub-img" src={compoundDao}  alt="compound-duo-logo"/>
+                      <img
+                        className="allsub-img"
+                        src={compoundDao}
+                        alt="compound-duo-logo"
+                      />
                       <div className="allsub-subitem">Compound Dao</div>
                       {/* <div className="allsub-subitem">Lorem</div> */}
                       {/* <div className="allsub-subitem">2.8%</div> */}
@@ -234,7 +238,7 @@ const AllSubscription = () => {
                     </div>
                     <div className="allsub-item">
                       <input type="checkbox" />
-                      <img className="allsub-img" src={Uni}  alt="uni-logo"/>
+                      <img className="allsub-img" src={Uni} alt="uni-logo" />
                       <div className="allsub-subitem">UNI</div>
                       {/* <div className="allsub-subitem">Lorem</div> */}
                       {/* <div className="allsub-subitem">0.27%</div> */}

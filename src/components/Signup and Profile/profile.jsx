@@ -19,8 +19,8 @@ const Profile = ({ mainContract, account }) => {
 
   const { address, isConnecting, isDisconnected } = useAccount();
 
-  const CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
-
+  const SCROLL_CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
+  const CONTRACT_ADDRESS = "0x0e313A08547361F265d634B5A7b9179f432d0f52";
   const [userAddress, setUserAddress] = useState("");
   const [isLoading, setLoading] = React.useState(true);
   const [name, setName] = React.useState("");
@@ -199,10 +199,7 @@ const Profile = ({ mainContract, account }) => {
   };
 
   return (
-    <div
-      className="profile-main"
-      
-    >
+    <div className="profile-main">
       {buttonPopup && (
         <EditProfile
           closeModal={setButtonPopup}
@@ -220,16 +217,19 @@ const Profile = ({ mainContract, account }) => {
             <div className="profile-header">Profile</div>
             <img className="profile-img" src={userImage} alt="profile-img" />
             <div className="profile-content-main">
-              
-              <div className="profile-content">Name - <span>{userName}</span></div>
+              <div className="profile-content">
+                Name - <span>{userName}</span>
+              </div>
             </div>
             <div className="profile-content-main">
-              
-              <div className="profile-content">Email - <span>{userEmail}</span></div>
+              <div className="profile-content">
+                Email - <span>{userEmail}</span>
+              </div>
             </div>
             <div className="profile-content-main">
-              
-              <div className="profile-content">Contact Number - <span>{userNumber}</span></div>
+              <div className="profile-content">
+                Contact Number - <span>{userNumber}</span>
+              </div>
             </div>
           </div>
           <div className="profile-right">
@@ -246,7 +246,11 @@ const Profile = ({ mainContract, account }) => {
                         {/* <img className="profile-right-icon" src={AAVE} />
                   <div className="profile-right-txt">AAVE</div> */}
 
-                        <img className="profile-right-icon" src={item.image}  alt=""/>
+                        <img
+                          className="profile-right-icon"
+                          src={item.image}
+                          alt=""
+                        />
                         <div className="profile-right-txt">{item.name}</div>
                       </div>
                     </div>

@@ -7,7 +7,8 @@ import ss_abi from "../../artifacts/contracts/stakescription.sol/stakescription.
 import axios from "axios";
 
 const SignUp = () => {
-  const CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
+  const SCROLL_CONTRACT_ADDRESS = "0xC7eC9E3143620FCB5A719818372D72b7F75d3CA5";
+  const CONTRACT_ADDRESS = "0x0e313A08547361F265d634B5A7b9179f432d0f52";
 
   const [userAddress, setUserAddress] = useState("");
   const [name, setName] = useState("");
@@ -71,13 +72,10 @@ const SignUp = () => {
 
   const fileInputRef = useRef();
   return (
-    <div
-      className="sign-main"
-     
-    >
+    <div className="sign-main">
       <div className="sign-sub">
-        <div className="sign-header">Sign Up</div> 
-       
+        <div className="sign-header">Sign Up</div>
+
         <div className="sign-form-item">
           <input
             className="sign-text-field"
@@ -88,7 +86,7 @@ const SignUp = () => {
             }}
           ></input>
         </div>
-        
+
         <div className="sign-form-item">
           <input
             className="sign-text-field"
@@ -99,7 +97,7 @@ const SignUp = () => {
             }}
           ></input>
         </div>
-        
+
         <div className="sign-form-item">
           <input
             className="sign-text-field"
@@ -128,14 +126,18 @@ const SignUp = () => {
             onChange={(e) => {
               uploadImage(e);
             }}
-          ></input>{userImage ? <div className="picked-image">
-          <img
-            alt="uploading"
-            className="uploaded-image"
-            src={userImage}
-          ></img>
-        </div>:""}
-          
+          ></input>
+          {userImage ? (
+            <div className="picked-image">
+              <img
+                alt="uploading"
+                className="uploaded-image"
+                src={userImage}
+              ></img>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
 
         <button className="sign-btn" onClick={addUser}>
