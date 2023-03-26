@@ -1,0 +1,85 @@
+.sign-main {
+  text-align: center;
+  min-height: 100vh;
+
+  background: #082032;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sign-sub {
+  position: relative;
+  overflow: hidden;
+  background-color: #ff4c29;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+  width: 25vw;
+  height: max-content;
+  margin-left: 40%;
+  margin-top: 20vh;
+  border-radius: 10px;
+}
+input {
+  box-shadow: none;
+  border: none;
+  padding: 0px 10px;
+}
+.sign-header {
+  font-size: x-large;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+
+.sign-icon {
+  height: 5vh;
+  width: 5vw;
+  margin-top: 2vh;
+}
+
+.sign-text-field {
+  border-radius: 5px;
+  height: 5vh;
+  width: 15vw;
+  margin: 10px 0px;
+}
+
+.sign-btn {
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #082032;
+  font-size: large;
+  box-shadow: none;
+  border: 1px solid #ffffff;
+  padding: 10px 30px;
+  border-radius: 999999px;
+  cursor: pointer;
+  font-family: "Noir_regular";
+  margin: 30px 0px;
+}
+
+.file-btn {
+  margin: 10px;
+  box-shadow: none;
+  border: 1px solid #082032;
+  padding: 10px;
+  background-color: #ffffff;
+  color: grey;
+  font-family: inherit;
+  font-size: inherit;
+  width: auto;
+}
+
+.uploaded-image {
+  height: 50px;
+  width: 50px;
+}
+
+.upload-file-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

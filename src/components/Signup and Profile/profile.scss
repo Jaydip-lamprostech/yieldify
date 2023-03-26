@@ -1,0 +1,139 @@
+.profile-main {
+  text-align: center;
+  height: 100vh;
+  background: #082032;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.profile-sub {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.3) 5px 8px 12px;
+  width: 75vw;
+  // height: 70vh;
+  margin-left: 12vw;
+  margin-top: 20vh;
+  border-radius: 10px;
+  padding-bottom: 30px;
+}
+.profile-content span {
+  color: #082032;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+// .profile-left {
+//   margin-left: -65vw;
+// }
+.profile-header {
+  font-size: xx-large;
+  font-weight: 600;
+  font-family: "Noir_medium";
+  // padding-top: 5vh;
+  margin: 2%;
+}
+
+.profile-icon {
+  width: 5vw;
+  height: 5vh;
+  margin-top: 4vh;
+  margin-left: 5vw;
+}
+
+.profile-content-main {
+  display: flex;
+}
+
+.profile-content {
+  width: 100%;
+  //   text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: 500;
+  font-family: "Noir_regular";
+  text-align: justify;
+  margin-left: 1vw;
+}
+
+.profile-img {
+  // height: 10vh;
+  // width: 5vw;
+  width: 64px;
+  height: 64px;
+  border-radius: 99999px;
+  margin-top: 20px;
+}
+
+.profile-position {
+  display: flex;
+  padding-top: 50px;
+  height: min-content;
+}
+
+// .profile-top {
+//   display: flex;
+// }
+.profile-left {
+  width: 30%;
+  text-align: center;
+  border-right: 1px solid #a6a6a6;
+  padding-right: 20px;
+}
+
+.profile-right {
+  padding-left: 20px;
+  width: 70%;
+  text-align: center;
+}
+
+.profile-right-main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+}
+
+.profile-right-sub {
+  margin: 10px;
+  height: 15vh;
+  width: 10vw;
+  padding: 20px 40px;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile-right-icon {
+  height: 7vh;
+  width: 7vw;
+  margin: 10px;
+}
+
+.profile-right-txt {
+  margin: 10px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.profile-sub-header {
+  font-size: x-large;
+  font-weight: 600;
+  margin: 2%;
+  font-family: "Noir_medium";
+}
+
+.profile-btn {
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: #ff4c29;
+  color: #ffffff;
+  font-size: large;
+  padding: 10px 30px;
+  border: 1px solid #ff4c29;
+  cursor: pointer;
+  font-family: "Noir_regular";
+}
