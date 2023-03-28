@@ -1,6 +1,6 @@
-# Stakesription
+# Yieldify
 
-Project Details: StakeYard aims to become a medium of revolutionary DeFi where a user can stake some amount of tokens in a pool and gain not just interest for the staked tokens but a subscription of their choice too.
+Project Details: Yieldify aims to become a medium of revolutionary DeFi where a user can stake some amount of tokens in a pool and gain not just interest for the staked tokens but a subscription of their choice too.
 
 Once the user chooses the subscription plan of choice, they need to stake a certain amount of tokens. The staked tokens are shifted to the pool immediately.
 
